@@ -1,0 +1,32 @@
+{
+  "1": {
+    "flag": "There is a secret message"
+  },
+  "2": {
+    "flag": "Hello World"
+  },
+  "3": {
+    "flag": "spaidy2025"
+  },
+  "4": {
+    "flag": "base64decode"
+  },
+  "5": {
+    "flag": "rot13cipher"
+  },
+  "6": {
+    "flag": "darkavengers"
+  },
+  "7": {
+    "flag": "aescracked"
+  },
+  "8": {
+    "flag": "xorlogic"
+  },
+  "9": {
+    "flag": "decodehex"
+  },
+  "10": {
+    "flag": "finalflag"
+  }
+}
