@@ -60,16 +60,31 @@
     </style>
 </head>
 
+<!-- views/level1.ejs -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Level <%= level %>
+    </title>
+
+</head>
+
 <body>
     <div class="glass">
-        <h2>Level 1</h2>
-        <p><strong>Encrypted:</strong> Uifsf jt b tfdsfu nfttbhf</p>
-        <form action="/check" method="POST">
-            <input type="hidden" name="level" value="1">
+        <h2>Level <%= level %>
+        </h2>
+        <p><strong>Encrypted:</strong>
+            <%= encrypted %>
+        </p>
+        <form method="POST" action="/check">
+            <input type="hidden" name="level" value="<%= level %>" />
             <input type="text" name="flag" placeholder="Enter flag" required />
             <button type="submit">Submit</button>
         </form>
+        <% if (error) { %>
+            <p class="error">❌ Incorrect flag, try again!</p>
+            <% } %>
     </div>
-</body>
 
 </html>
